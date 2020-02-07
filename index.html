@@ -1,0 +1,421 @@
+<!doctype html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Kedi Dünyası</title>
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: 225px;
+            object-fit: contain;
+            margin-top: -38px;
+        }
+
+        .navbar-light {
+            background-color: #e3f2fd;
+        }
+
+        .pati-color {
+            color: #000000;
+        }
+
+        .fa-mars,
+        .fa-venus {
+            position: inherit;
+            z-index: 2px;
+        }
+
+        .mt-80 {
+            margin-top: 80px;
+        }
+
+        .btn-dark {
+            position: inherit;
+            color: #fff;
+            background-color: #343a40;
+            border-color: #343a40;
+            width: 100px;
+            margin-left: auto;
+            margin-top: -30px;
+            z-index: 1px;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            padding: 0px;
+        }
+
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: 0.25rem 3.25rem;
+            background-color: #fff;
+            border: none;
+        }
+
+        .btn-outline-primary {
+            width: 100px;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-paw pati-color"></i> Patiler</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" title="Anasayfa"><i class="fas fa-wallet"></i> Bağış</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html" title="Yardım"><i class="fas fa-question-circle"></i>
+                        Yardım</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <button class="btn btn-primary mr-1" type="submit"><i class="fas fa-user"></i> Üye Ol</button>
+                <button class="btn btn-primary mr-1" type="submit"><i class="fas fa-sign-in-alt"></i> Giriş Yap</button>
+                <input class="form-control mr-2 aranan" type="search" placeholder="Arama" aria-label="Search">
+                <button class="btn btn-outline-primary ara" type="button"><i class="fas fa-search"></i> Ara</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container mt-80">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm kedi">
+                    <i class="fas fa-mars fa-2x"></i>
+                    <button type="button" class="button btn btn-dark">Adana</button>
+                    <img src="assets/image/farsKedisi.jpg" class="img-fluid bd-placeholder-img card-img-top"
+                        width="100%" height="225" alt="iran kedisi" title="Oreo">
+                    </img>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item card-text">Oreo</li>
+                            <li class="list-group-item card-text cins">Fars (İran) Kedisi</li>
+                            <li class="list-group-item card-text">3 Aylık</li>
+                        </ul>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <i class="far fa-address-card" title="İletişim Bilgileri"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">İletişim Bilgileri</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><i class="fas fa-phone-alt"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-at"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm kedi">
+                    <i class="fas fa-venus fa-2x"></i>
+                    <button type="button" class="button btn btn-dark">Ankara</button>
+                    <img src="assets/image/BritishShorthair.jpg" class="img-fluid bd-placeholder-img card-img-top"
+                        width="100%" height="225" title="Balım">
+                    </img>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item card-text">Balım</li>
+                            <li class="list-group-item card-text cins">British Shorthair</li>
+                            <li class="list-group-item card-text">4 Aylık</li>
+                        </ul>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <i class="far fa-address-card" title="İletişim Bilgileri"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">İletişim Bilgileri</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><i class="fas fa-phone-alt"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-at"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm kedi">
+                    <i class="fas fa-venus fa-2x"></i>
+                    <button type="button" class="button btn btn-dark">İzmir</button>
+                    <img src="assets/image/munchkin.jpg" class="img-fluid bd-placeholder-img card-img-top" width="100%"
+                        height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" alt="Munchkin" title="Şapşik">
+                    </img>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item card-text">Şapşik</li>
+                            <li class="list-group-item card-text cins">Munchkin</li>
+                            <li class="list-group-item card-text">2 Aylık</li>
+                        </ul>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <i class="far fa-address-card" title="İletişim Bilgileri"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">İletişim Bilgileri</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><i class="fas fa-phone-alt"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-at"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm kedi">
+                    <i class="fas fa-mars fa-2x"></i>
+                    <button type="button" class="button btn btn-dark">İstanbul</button>
+                    <img src="assets/image/Karayak(Snowshoe).jpg" class="img-fluid bd-placeholder-img card-img-top"
+                        width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" alt="Karayak(Snowshoe)" title="Esved">
+                    </img>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item card-text">Esved</li>
+                            <li class="list-group-item card-text cins">Karayak (Snowshoe)</li>
+                            <li class="list-group-item card-text">2 Yaş</li>
+                        </ul>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <i class="far fa-address-card" title="İletişim Bilgileri"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">İletişim Bilgileri</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><i class="fas fa-phone-alt"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-at"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm kedi">
+                    <i class="fas fa-venus fa-2x"></i>
+                    <button type="button" class="button btn btn-dark">Aydın</button>
+                    <img src="assets/image/ExoticShorthair.jpg" class="img-fluid bd-placeholder-img card-img-top"
+                        width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" alt="Exotic Shorthair" title="Tostos">
+                    </img>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item card-text">Tostos</li>
+                            <li class="list-group-item card-text cins">Exotic Shorthair</li>
+                            <li class="list-group-item card-text">4 Yaş</li>
+                        </ul>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <i class="far fa-address-card" title="İletişim Bilgileri"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">İletişim Bilgileri</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><i class="fas fa-phone-alt"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-at"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm kedi">
+                    <i class="fas fa-mars fa-2x"></i>
+                    <button type="button" class="button btn btn-dark">Van</button>
+                    <img src="assets/image/VanKedisi.jpg" class="img-fluid bd-placeholder-img card-img-top" width="100%"
+                        height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" alt="Van Kedisi" title="Dude">
+                    </img>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item card-text">Dude</li>
+                            <li class="list-group-item card-text cins">Van Kedisi</li>
+                            <li class="list-group-item card-text">2 Yaş</li>
+                        </ul>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <i class="far fa-address-card" title="İletişim Bilgileri"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">İletişim Bilgileri</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><i class="fas fa-phone-alt"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-at"></i></li>
+                                        <li class="list-group-item"><i class="fas fa-map-marker-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+        <script>
+            $( document ).ready(function() {
+
+                $('.ara').click(function(){
+                    var arananKelime = $('.aranan').val();
+
+                    
+                    $('li.cins').each(function(i, el) {
+
+                        if ( el.textContent.indexOf(arananKelime) < 0) {
+                            $(this).parents('.kedi').hide();
+                        }
+
+                        
+                    });
+
+                });
+
+            });
+            // function myFunction() {
+            //     var input, filter, ul, li, a, i, txtValue;
+            //     input = document.getElementById("myInput");
+            //     filter = input.value.toUpperCase();
+            //     ul = document.getElementById("myUL");
+            //     li = ul.getElementsByTagName("li");
+            //     for (i = 0; i < li.length; i++) {
+            //         a = li[i].getElementsByTagName("a")[0];
+            //         txtValue = a.textContent || a.innerText;
+            //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            //             li[i].style.display = "";
+            //         } else {
+            //             li[i].style.display = "none";
+            //         }
+            //     }
+            // }
+            </script>
+            
+
+
+
+    </body>
+
+</html>
